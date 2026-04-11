@@ -1,7 +1,7 @@
 <?php
 /**
  * FIT Competition 2026 - Prize Pool Component
- * Total: Rp 52.500.000
+ * Total: Rp 66.000.000
  * Text-based design — no images used
  */
 ?>
