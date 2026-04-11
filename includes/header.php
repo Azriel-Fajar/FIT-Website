@@ -1,14 +1,16 @@
 <?php
+
 /**
  * FIT Competition 2026 - Header Include
  * Usage: Set $pageTitle before including this file
  * Optional: Set $pageDescription for meta description
  */
 if (!isset($pageTitle)) $pageTitle = 'FIT Competition 2026';
-if (!isset($pageDescription)) $pageDescription = 'FIT Competition 2026 - Digital Impact for Humanitarian Response and Global Well-Being. Kompetisi teknologi informasi oleh FTI UKSW.';
+if (!isset($pageDescription)) $pageDescription = 'FIT Competition 2026 - Digital Impact for Humanitarian Response and Global Well-Being. An information technology competition by FTI UKSW.';
 ?>
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,12 +35,13 @@ if (!isset($pageDescription)) $pageDescription = 'FIT Competition 2026 - Digital
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-bg">
 
-<!-- Floating Geometric Shapes -->
-<div class="geo-shapes">
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-</div>
+    <!-- Floating Geometric Shapes -->
+    <div class="geo-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>

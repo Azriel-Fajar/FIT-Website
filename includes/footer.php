@@ -1,7 +1,7 @@
 <?php
+
 /**
  * FIT Competition 2026 - Footer Include
- * Instagram link updated to fitcompetition26
  */
 ?>
 <!-- Footer -->
@@ -16,9 +16,9 @@
                 </p>
             </div>
 
-            <!-- Shortcuts -->
+            <!-- Quick Links -->
             <div class="col-lg-2 col-md-6 col-6 text-center text-lg-start">
-                <h5>Shortcut</h5>
+                <h5>Quick Links</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2"><a href="index.php#competition-category">Category</a></li>
                     <li class="mb-2"><a href="aboutus.php">About Us</a></li>
@@ -67,7 +67,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center">
-            &copy; <?php echo date('Y'); ?> FIT Competition All Rights Reserved
+            &copy; <?php echo date('Y'); ?> FIT Competition. All Rights Reserved.
         </div>
     </div>
 </footer>
@@ -77,4 +77,5 @@
 <!-- Main JS -->
 <script src="js/main.js"></script>
 </body>
+
 </html>

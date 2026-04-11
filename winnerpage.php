@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'FIT Competition 2026 - Winner Announcement';
-$pageDescription = 'Pengumuman pemenang FIT Competition 2026.';
+$pageDescription = 'Winner announcement for FIT Competition 2026.';
 $activePage = '';
 include 'includes/header.php';
 include 'includes/navbar.php';
@@ -17,7 +17,7 @@ include 'includes/navbar.php';
             </div>
 
             <div class="tba-text">TBA</div>
-            <p class="text-secondary mt-3">Pengumuman pemenang akan diumumkan setelah babak final.</p>
+            <p class="text-secondary mt-3">Winners will be announced after the final round.</p>
 
             <a href="index.php" class="btn-outline-glow mt-4">
                 <i class="bi bi-arrow-left me-2"></i>Back to Home

@@ -1,54 +1,106 @@
 <?php
+
 /**
  * FIT Competition 2026 - Interactive Timeline Component
  * Reusable across all category pages
- * Data stored as PHP array for easy editing
+ * Set $timelineCategory before including this file:
+ *   'web' | 'mobile' | 'data' | 'cyber'
  */
 
-$timelineItems = [
-    [
-        'title' => 'Pendaftaran & Pengumpulan Proposal',
-        'date' => '1 Mei – 16 Juni 2026',
+// --- Shared base timeline items ---
+$baseItems = [
+    'registration' => [
+        'title'    => 'Registration & Proposal Submission',
+        'date'     => '1 May – 16 June 2026',
         'location' => 'Online',
-        'icon' => 'bi-pencil-square'
+        'icon'     => 'bi-pencil-square'
     ],
-    [
-        'title' => 'Penilaian Proposal',
-        'date' => '17 Juni – 21 Juni 2026',
+    'proposal_review' => [
+        'title'    => 'Proposal Review',
+        'date'     => '17 June – 21 June 2026',
         'location' => '',
-        'icon' => 'bi-clipboard-check'
+        'icon'     => 'bi-clipboard-check'
     ],
-    [
-        'title' => 'Pengumuman Finalis',
-        'date' => '23 Juni 2026',
+    'finalist_announcement' => [
+        'title'    => 'Finalist Announcement',
+        'date'     => '23 June 2026',
         'location' => '',
-        'icon' => 'bi-megaphone'
+        'icon'     => 'bi-megaphone'
     ],
-    [
-        'title' => 'Pendaftaran Ulang',
-        'date' => '23 Juni – 30 Juni 2026',
+    'reregistration' => [
+        'title'    => 'Re-registration',
+        'date'     => '23 June – 30 June 2026',
         'location' => '',
-        'icon' => 'bi-person-check'
+        'icon'     => 'bi-person-check'
     ],
-    [
-        'title' => 'Seminar & Technical Meeting',
-        'date' => '7 Juli 2026',
+    'seminar' => [
+        'title'    => 'Seminar & Technical Meeting',
+        'date'     => '7 July 2026',
         'location' => 'FTI UKSW',
-        'icon' => 'bi-people'
+        'icon'     => 'bi-people'
     ],
-    [
-        'title' => 'Babak Final (Coding)',
-        'date' => '8 Juli 2026',
+    'final_coding' => [
+        'title'    => 'Final Round (Coding)',
+        'date'     => '8 July 2026',
         'location' => 'FTI UKSW',
-        'icon' => 'bi-code-slash'
+        'icon'     => 'bi-code-slash'
     ],
-    [
-        'title' => 'Babak Final (Presentasi) & Pengumuman Pemenang',
-        'date' => '9 Juli 2026',
+    'final_presentation' => [
+        'title'    => 'Final Round (Presentation) & Winner Announcement',
+        'date'     => '9 July 2026',
         'location' => 'FTI UKSW',
-        'icon' => 'bi-trophy'
+        'icon'     => 'bi-trophy'
     ],
 ];
+
+// --- Build timeline per category ---
+$timelineCategory = $timelineCategory ?? 'web';
+
+switch ($timelineCategory) {
+
+    case 'data':
+        $timelineItems = [
+            array_merge($baseItems['registration'], [
+                'date' => '1 May – 12 June 2026',
+            ]),
+            [
+                'title'    => 'Preliminary Round',
+                'date'     => '12 June – 16 June 2026',
+                'location' => '',
+                'icon'     => 'bi-bar-chart-steps',
+            ],
+            $baseItems['proposal_review'],
+            $baseItems['finalist_announcement'],
+            $baseItems['reregistration'],
+            $baseItems['seminar'],
+            $baseItems['final_coding'],
+            $baseItems['final_presentation'],
+        ];
+        break;
+
+    case 'cyber':
+        $timelineItems = [
+            $baseItems['registration'],
+            [
+                'title'    => 'Preliminary Round',
+                'date'     => '17 June – 21 June 2026',
+                'location' => '',
+                'icon'     => 'bi-shield-lock',
+            ],
+            $baseItems['finalist_announcement'],
+            $baseItems['reregistration'],
+            $baseItems['seminar'],
+            $baseItems['final_coding'],
+            $baseItems['final_presentation'],
+        ];
+        break;
+
+    case 'web':
+    case 'mobile':
+    default:
+        $timelineItems = array_values($baseItems);
+        break;
+}
 ?>
 
 <!-- Timeline Section -->
@@ -61,22 +113,22 @@ $timelineItems = [
 
         <div class="timeline">
             <?php foreach ($timelineItems as $index => $item): ?>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content glass-light">
-                    <div class="timeline-date">
-                        <i class="bi <?php echo $item['icon']; ?> me-1"></i>
-                        <?php echo $item['date']; ?>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-light">
+                        <div class="timeline-date">
+                            <i class="bi <?php echo $item['icon']; ?> me-1"></i>
+                            <?php echo $item['date']; ?>
+                        </div>
+                        <div class="timeline-title"><?php echo $item['title']; ?></div>
+                        <?php if (!empty($item['location'])): ?>
+                            <div class="timeline-location">
+                                <i class="bi bi-geo-alt me-1"></i><?php echo $item['location']; ?>
+                            </div>
+                        <?php endif; ?>
                     </div>
-                    <div class="timeline-title"><?php echo $item['title']; ?></div>
-                    <?php if (!empty($item['location'])): ?>
-                    <div class="timeline-location">
-                        <i class="bi bi-geo-alt me-1"></i><?php echo $item['location']; ?>
-                    </div>
-                    <?php endif; ?>
+                    <span class="timeline-number"><?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?></span>
                 </div>
-                <span class="timeline-number"><?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?></span>
-            </div>
             <?php endforeach; ?>
         </div>
     </div>

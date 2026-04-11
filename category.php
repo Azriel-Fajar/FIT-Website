@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'FIT Competition 2026 - Web Development';
-$pageDescription = 'Kategori Web Development - FIT Competition 2026. Tunjukkan keterampilan merancang dan mengembangkan situs web inovatif.';
+$pageDescription = 'Web Development Category - FIT Competition 2026. Showcase your skills in designing and building innovative websites.';
 $activePage = 'category-web';
 include 'includes/header.php';
 include 'includes/navbar.php';
@@ -13,7 +13,7 @@ include 'includes/navbar.php';
         <h1>FIT Competition 2026</h1>
         <h2>Web Development</h2>
         <p>
-            Kompetisi Web Development merupakan ajang bagi peserta untuk menunjukkan keterampilan dalam merancang dan mengembangkan situs web atau aplikasi web yang inovatif, responsif, dan fungsional. Peserta ditantang untuk menciptakan solusi berbasis web yang dapat memberikan dampak positif sesuai dengan tema. Setiap tim atau individu diharapkan mampu mengintegrasikan teknologi yang relevan, mengutamakan pengalaman pengguna (UI/UX), serta memastikan performa dan keamanan website yang dikembangkan. Peserta bebas menggunakan bahasa pemrograman dan framework sesuai dengan keahlian peserta, dengan hasil akhir yang dapat berupa website statis maupun dinamis.
+            The Web Development competition challenges participants to showcase their skills in designing and building innovative, responsive, and fully functional websites or web applications. Participants are tasked with creating web-based solutions that deliver a positive impact aligned with the competition theme. Each team or individual is expected to integrate relevant technologies, prioritize user experience (UI/UX), and ensure the performance and security of the developed website. Participants are free to use any programming language or framework of their choice, with the final product being either a static or dynamic website.
         </p>
         <a href="https://forms.gle/LdyrgDz8MhieJ8DU6" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
@@ -22,7 +22,8 @@ include 'includes/navbar.php';
 </section>
 
 <!-- Timeline -->
-<?php include 'includes/timeline.php'; ?>
+<?php $timelineCategory = 'web';
+include 'includes/timeline.php'; ?>
 
 <!-- Countdown -->
 <section class="countdown-section">
@@ -61,7 +62,7 @@ include 'includes/navbar.php';
         </div>
         <div class="guidebook-card glass mx-auto fade-in-up">
             <p>
-                Kompetisi Web Developer menantang peserta untuk membangun situs web yang fungsional, responsif, dan menarik secara visual. Guidebook ini mencakup ketentuan teknis, tema lomba, batasan penggunaan teknologi, serta kriteria penilaian seperti performa, UX/UI, dan kualitas kode.
+                The Web Development competition challenges participants to build a website that is functional, responsive, and visually appealing. The guidebook covers technical requirements, the competition theme, technology usage constraints, and evaluation criteria such as performance, UX/UI, and code quality.
             </p>
             <a href="https://drive.google.com/file/d/1SI-eija6bFZZZ3fex3jgZ2KUXkU479OU/view?usp=sharing" target="_blank" class="btn-glow">
                 <i class="bi bi-file-earmark-text me-2"></i>Download Guidebook

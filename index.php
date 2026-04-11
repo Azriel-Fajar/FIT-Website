@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'FIT Competition 2026 - Digital Impact for Humanitarian Response';
-$pageDescription = 'FIT Competition 2026 - Kompetisi teknologi informasi terbesar di FTI UKSW. Digital Impact for Humanitarian Response and Global Well-Being.';
+$pageDescription = 'FIT Competition 2026 - The largest information technology competition at FTI UKSW. Digital Impact for Humanitarian Response and Global Well-Being.';
 $activePage = 'home';
 include 'includes/header.php';
 include 'includes/navbar.php';
@@ -19,7 +19,7 @@ include 'includes/navbar.php';
                         and Global Well-Being
                     </h1>
                     <p class="hero-subtitle mx-auto mx-lg-0">
-                        Ajang kolaborasi dan inovasi di bidang teknologi informasi yang diselenggarakan oleh Himpunan Mahasiswa Program Studi S1 Teknik Informatika, FTI UKSW.
+                        A platform for collaboration and innovation in information technology, organized by the Student Association of the Informatics Engineering Undergraduate Program, FTI UKSW.
                     </p>
                     <a href="#competition-category" class="btn-glow">
                         Explore Now <i class="bi bi-arrow-right ms-2"></i>
@@ -65,7 +65,7 @@ include 'includes/navbar.php';
                                         </div>
                                         <div class="col-md-8">
                                             <h3>Web Development</h3>
-                                            <p>Kompetisi Web Development merupakan ajang bagi peserta untuk menunjukkan keterampilan dalam merancang dan mengembangkan situs web atau aplikasi web yang inovatif, responsif, dan fungsional.</p>
+                                            <p>The Web Development competition challenges participants to showcase their skills in designing and building innovative, responsive, and fully functional websites or web applications.</p>
                                             <a href="category.php" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@ include 'includes/navbar.php';
                                         </div>
                                         <div class="col-md-8">
                                             <h3>Mobile Application</h3>
-                                            <p>Kompetisi Mobile Application menantang peserta untuk mengembangkan aplikasi mobile yang tidak hanya inovatif tetapi juga mampu memberikan solusi nyata bagi pengguna.</p>
+                                            <p>The Mobile Application competition challenges participants to develop a mobile app that is not only innovative but also capable of delivering real solutions to everyday user needs.</p>
                                             <a href="category-mobile.php" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -131,7 +131,7 @@ include 'includes/navbar.php';
                                         </div>
                                         <div class="col-md-8">
                                             <h3>Cyber Security</h3>
-                                            <p>Kompetensi Cyber Security dalam ajang Capture the Flag (CTF) mengajak peserta untuk menguji dan mengembangkan kemampuan dalam menemukan dan mengeksploitasi kerentanan di dunia digital.</p>
+                                            <p>The Cyber Security competition in a Capture the Flag (CTF) format invites participants to test and develop their skills in identifying and exploiting vulnerabilities in the digital world.</p>
                                             <a href="category-cyber.php" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@ include 'includes/navbar.php';
                         <div class="title-line" style="margin: 0.75rem 0 0;"></div>
                     </div>
                     <p>
-                        FIT Competition 2026 merupakan ajang kolaborasi dan inovasi di bidang teknologi informasi yang diselenggarakan oleh Himpunan Mahasiswa Program Studi S1 Teknik Informatika di Fakultas Teknologi Informasi Universitas Kristen Satya Wacana. Kompetisi ini menjadi wadah bagi mahasiswa untuk mengembangkan ide, merancang solusi, dan mengimplementasikan inovasi digital yang relevan bagi masyarakat. Mengusung nilai kritis, kreatif, dan inovatif, kegiatan ini tidak hanya menilai kemampuan teknis, tetapi juga kedalaman analisis serta dampak solusi yang dihasilkan. FIT Competition 2026 akan diselenggarakan pada 7–9 Juli 2026 di Universitas Kristen Satya Wacana, Salatiga, melalui rangkaian seleksi proposal hingga babak final pengembangan solusi secara langsung.
+                        FIT Competition 2026 is a platform for collaboration and innovation in information technology, organized by the Student Association of the Informatics Engineering Undergraduate Program at the Faculty of Information Technology, Satya Wacana Christian University. This competition serves as a space for students to develop ideas, design solutions, and implement digital innovations that are relevant to society. Guided by the values of critical thinking, creativity, and innovation, the event evaluates not only technical ability but also depth of analysis and the real-world impact of the solutions produced. FIT Competition 2026 will be held on 7–9 July 2026 at Satya Wacana Christian University, Salatiga, through a series of stages from proposal screening to a live final round.
                     </p>
                 </div>
             </div>

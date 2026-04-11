@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'FIT Competition 2026 - Mobile Application';
-$pageDescription = 'Kategori Mobile Application - FIT Competition 2026. Kembangkan aplikasi mobile inovatif yang memberikan solusi nyata.';
+$pageDescription = 'Mobile Application Category - FIT Competition 2026. Develop an innovative mobile app that delivers real-world solutions.';
 $activePage = 'category-mobile';
 include 'includes/header.php';
 include 'includes/navbar.php';
@@ -13,7 +13,7 @@ include 'includes/navbar.php';
         <h1>FIT Competition 2026</h1>
         <h2>Mobile Application</h2>
         <p>
-            Pada kategori Mobile Application, peserta diharapkan membuat aplikasi mobile inovatif yang memberikan solusi atas permasalahan tertentu. Guidebook ini menjelaskan alur pengembangan, platform yang diperbolehkan (Android/iOS), dan aspek penilaian seperti fungsionalitas, desain antarmuka, serta pengalaman pengguna.
+            In the Mobile Application category, participants are expected to build an innovative mobile application that provides a solution to a specific problem. The competition covers the full development workflow, supports both Android and iOS platforms, and evaluates entries on criteria such as functionality, interface design, and overall user experience.
         </p>
         <a href="https://forms.gle/LdyrgDz8MhieJ8DU6" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
@@ -22,7 +22,8 @@ include 'includes/navbar.php';
 </section>
 
 <!-- Timeline -->
-<?php include 'includes/timeline.php'; ?>
+<?php $timelineCategory = 'mobile';
+include 'includes/timeline.php'; ?>
 
 <!-- Countdown -->
 <section class="countdown-section">
@@ -61,7 +62,7 @@ include 'includes/navbar.php';
         </div>
         <div class="guidebook-card glass mx-auto fade-in-up">
             <p>
-                Kompetisi Mobile Application menantang peserta untuk mengembangkan aplikasi mobile yang tidak hanya inovatif tetapi juga mampu memberikan solusi nyata bagi pengguna. Aplikasi yang dibuat harus memiliki fitur interaktif, antarmuka yang intuitif, serta mampu beradaptasi dengan kebutuhan pengguna dalam berbagai aspek kehidupan. Dalam kompetisi ini, peserta harus memastikan aplikasi yang dikembangkan sesuai dengan tema, serta memiliki kestabilan, efisiensi, dan pengalaman pengguna yang optimal. Peserta dapat menggunakan platform pengembangan mobile apa pun dengan bahasa pemrograman dan framework yang dikuasai.
+                The Mobile Application competition challenges participants to develop a mobile app that is not only innovative but also capable of delivering real, practical solutions to users. The app must include interactive features, an intuitive interface, and adapt to user needs across various aspects of daily life. Entries must align with the competition theme and demonstrate stability, efficiency, and an optimal user experience. Participants may use any mobile development platform, programming language, or framework of their choice.
             </p>
             <a href="https://drive.google.com/file/d/1SI-eija6bFZZZ3fex3jgZ2KUXkU479OU/view?usp=sharing" target="_blank" class="btn-glow">
                 <i class="bi bi-file-earmark-text me-2"></i>Download Guidebook

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'FIT Competition 2026 - Data Science';
-$pageDescription = 'Kategori Data Science - FIT Competition 2026. Analisis data dan kembangkan model machine learning terbaik.';
+$pageDescription = 'Data Science Category - FIT Competition 2026. Analyze data and build the best machine learning model.';
 $activePage = 'category-data';
 include 'includes/header.php';
 include 'includes/navbar.php';
@@ -13,7 +13,7 @@ include 'includes/navbar.php';
         <h1>FIT Competition 2026</h1>
         <h2>Data Science</h2>
         <p>
-            In the Data Science category, each team will be presented with a challenge that requires them to analyze and develop the best model using machine learning or deep learning to solve a problem based on a given dataset. There will be two types of Datasets provided, Image Dataset and Tabular Dataset. Image Dataset can be analyzed using classification, segmentation or object detection methods. Meanwhile, Tabular Dataset can be analyzed using regression, classification, clustering, or time series forecasting methods. Each team is allowed to use one or more datasets of the same or different types.
+            In the Data Science category, each team will be presented with a challenge that requires them to analyze and develop the best model using machine learning or deep learning to solve a problem based on a given dataset. There will be two types of datasets provided: Image Datasets and Tabular Datasets. Image Datasets can be analyzed using classification, segmentation, or object detection methods, while Tabular Datasets can be analyzed using regression, classification, clustering, or time series forecasting methods. Each team is allowed to use one or more datasets of the same or different types.
         </p>
         <a href="https://forms.gle/MAPcGSocrGUf6gan9" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
@@ -22,7 +22,8 @@ include 'includes/navbar.php';
 </section>
 
 <!-- Timeline -->
-<?php include 'includes/timeline.php'; ?>
+<?php $timelineCategory = 'data';
+include 'includes/timeline.php'; ?>
 
 <!-- Countdown -->
 <section class="countdown-section">
@@ -61,7 +62,7 @@ include 'includes/navbar.php';
         </div>
         <div class="guidebook-card glass mx-auto fade-in-up">
             <p>
-                The Data Science category focuses on the ability to analyze data to produce useful insights. The guidebook includes descriptions of datasets, analysis objectives, suggested techniques (such as machine learning or data visualization), and assessment indicators based on accuracy, interpretation of results, and innovation.
+                The Data Science category focuses on the ability to analyze data and produce meaningful insights. The guidebook includes dataset descriptions, analysis objectives, recommended techniques (such as machine learning or data visualization), and assessment criteria based on model accuracy, result interpretation, and innovation.
             </p>
             <a href="https://drive.google.com/file/d/1c0mRYvnCOxyBmHTeHeZL95Iur1s8vwoH/view?usp=sharing" target="_blank" class="btn-glow">
                 <i class="bi bi-file-earmark-text me-2"></i>Download Guidebook

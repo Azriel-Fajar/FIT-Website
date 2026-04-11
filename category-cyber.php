@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'FIT Competition 2026 - Cyber Security';
-$pageDescription = 'Kategori Cyber Security - FIT Competition 2026. Capture The Flag (CTF) - Uji kemampuan keamanan siber Anda.';
+$pageDescription = 'Cyber Security Category - FIT Competition 2026. Capture The Flag (CTF) - Test your cybersecurity skills.';
 $activePage = 'category-cyber';
 include 'includes/header.php';
 include 'includes/navbar.php';
@@ -13,7 +13,7 @@ include 'includes/navbar.php';
         <h1>FIT Competition 2026</h1>
         <h2>Cyber Security</h2>
         <p>
-            Kompetensi Cyber Security dalam ajang Capture the Flag (CTF) mengajak peserta untuk menguji dan mengembangkan kemampuan mereka dalam menemukan dan mengeksploitasi kerentanan di dunia digital. Dalam kompetisi ini, peserta akan dihadapkan pada tantangan yang menguji keterampilan dalam bidang Cyber Security. Peserta diminta untuk menyelesaikan serangkaian tantangan yang berfokus pada isu-isu keamanan data, mulai dari eksploitasi kerentanan aplikasi hingga pengungkapan dan pencegahan ancaman. Format perlombaan adalah Capture The Flag - Jeopardy Style dengan 5 kategori soal yang terdiri atas Cryptography, Web Exploitation, Forensics, Steganography, dan Miscellaneous.
+            The Cyber Security competition in a Capture the Flag (CTF) format invites participants to test and develop their skills in identifying and exploiting vulnerabilities in the digital world. Participants will face challenges that put their cybersecurity expertise to the test, from exploiting application vulnerabilities to uncovering and preventing digital threats. The competition follows a CTF Jeopardy Style format with five challenge categories: Cryptography, Web Exploitation, Forensics, Steganography, and Miscellaneous.
         </p>
         <a href="https://forms.gle/ua6u3LjcyeVEtGJA6" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
@@ -22,7 +22,8 @@ include 'includes/navbar.php';
 </section>
 
 <!-- Timeline -->
-<?php include 'includes/timeline.php'; ?>
+<?php $timelineCategory = 'cyber';
+include 'includes/timeline.php'; ?>
 
 <!-- Countdown -->
 <section class="countdown-section">
@@ -61,7 +62,7 @@ include 'includes/navbar.php';
         </div>
         <div class="guidebook-card glass mx-auto fade-in-up">
             <p>
-                Kompetisi Cyber Security menguji kemampuan peserta dalam memahami dan menyelesaikan tantangan keamanan siber. Guidebook ini menjelaskan format lomba (seperti CTF), jenis soal (Cryptography, Web Exploitation, Forensics, Steganography, dan Miscellaneous), serta sistem penilaian berbasis poin dan kecepatan penyelesaian.
+                The Cyber Security competition tests participants' ability to understand and solve cybersecurity challenges. The guidebook outlines the competition format (CTF), challenge types (Cryptography, Web Exploitation, Forensics, Steganography, and Miscellaneous), and a scoring system based on points and solving speed.
             </p>
             <a href="https://drive.google.com/file/d/1Qdb076vvny343LyBm-hpwfj9HCup_iuS/view" target="_blank" class="btn-glow">
                 <i class="bi bi-file-earmark-text me-2"></i>Download Guidebook

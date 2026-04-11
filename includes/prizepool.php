@@ -1,4 +1,5 @@
 <?php
+
 /**
  * FIT Competition 2026 - Prize Pool Component
  * Total: Rp 66.000.000
@@ -17,9 +18,8 @@
         <!-- Total Prize -->
         <div class="text-center fade-in-up mb-5">
             <div class="prizepool-total" id="prize-total">Rp 66.000.000</div>
-            <div class="prizepool-label">Total Hadiah</div>
+            <div class="prizepool-label">Total Prize</div>
         </div>
-
 
     </div>
 </section>

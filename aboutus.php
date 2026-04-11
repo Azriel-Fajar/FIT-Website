@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'FIT Competition 2026 - About Us';
-$pageDescription = 'Tentang FIT Competition 2026 - Sponsor dan partner kompetisi teknologi informasi FTI UKSW.';
+$pageDescription = 'About FIT Competition 2026 - Sponsors and partners of the FTI UKSW information technology competition.';
 $activePage = 'about';
 include 'includes/header.php';
 include 'includes/navbar.php';
@@ -20,10 +20,10 @@ include 'includes/navbar.php';
                         <div class="title-line" style="margin: 0.75rem 0 0;"></div>
                     </div>
                     <p>
-                        FIT Competition 2026 merupakan ajang kolaborasi dan inovasi di bidang teknologi informasi yang diselenggarakan oleh Himpunan Mahasiswa Program Studi S1 Teknik Informatika di Fakultas Teknologi Informasi Universitas Kristen Satya Wacana. Kompetisi ini menjadi wadah bagi mahasiswa untuk mengembangkan ide, merancang solusi, dan mengimplementasikan inovasi digital yang relevan bagi masyarakat.
+                        FIT Competition 2026 is a platform for collaboration and innovation in information technology, organized by the Student Association of the Informatics Engineering Undergraduate Program at the Faculty of Information Technology, Satya Wacana Christian University. This competition serves as a space for students to develop ideas, design solutions, and implement digital innovations that are relevant to society.
                     </p>
                     <p>
-                        Mengusung nilai kritis, kreatif, dan inovatif, kegiatan ini tidak hanya menilai kemampuan teknis, tetapi juga kedalaman analisis serta dampak solusi yang dihasilkan. FIT Competition 2026 akan diselenggarakan pada 7–9 Juli 2026 di Universitas Kristen Satya Wacana, Salatiga, melalui rangkaian seleksi proposal hingga babak final pengembangan solusi secara langsung.
+                        Guided by the values of critical thinking, creativity, and innovation, the event evaluates not only technical ability but also depth of analysis and the real-world impact of the solutions produced. FIT Competition 2026 will be held on 7–9 July 2026 at Satya Wacana Christian University, Salatiga, through a series of stages from proposal screening to a live final round.
                     </p>
                 </div>
             </div>
@@ -36,7 +36,7 @@ include 'includes/navbar.php';
     <div class="container">
         <div class="text-center fade-in-up">
             <div class="section-title-wrapper">
-                <h2 class="section-title"><span class="gradient-text">Tema 2026</span></h2>
+                <h2 class="section-title"><span class="gradient-text">Theme 2026</span></h2>
                 <div class="title-line"></div>
             </div>
             <div class="glass p-4 p-md-5 mx-auto" style="max-width: 700px; margin-top: 1rem;">
@@ -56,7 +56,7 @@ include 'includes/navbar.php';
     <div class="container">
         <div class="section-title-wrapper fade-in-up">
             <h2 class="section-title"><span class="gradient-text">Our Supporters</span></h2>
-            <p class="section-subtitle mt-2" style="color: var(--accent-cyan); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem;">Sponsor & Partners</p>
+            <p class="section-subtitle mt-2" style="color: var(--accent-cyan); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem;">Sponsors & Partners</p>
             <div class="title-line"></div>
         </div>
 
