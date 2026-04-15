@@ -1,0 +1,33 @@
+# FIT Competition 2026 - Clean URL Routing
+# Menghilangkan ekstensi .php dari URL
+
+Options -MultiViews
+RewriteEngine On
+
+# Jika file/folder asli ada, langsung serve
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect: jika ada yang akses dengan .php, redirect ke clean URL
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Rewrite clean URL ke file .php
+# Home: / -> index.php
+RewriteRule ^/?$ index.php [L]
+
+# About
+RewriteRule ^about/?$ aboutus.php [L]
+
+# Winner
+RewriteRule ^winner/?$ winnerpage.php [L]
+
+# Category pages
+RewriteRule ^category/?$ category.php [L]
+RewriteRule ^category-data/?$ category-data.php [L]
+RewriteRule ^category-mobile/?$ category-mobile.php [L]
+RewriteRule ^category-cyber/?$ category-cyber.php [L]
+
+# Error pages
+ErrorDocument 404 /404.php

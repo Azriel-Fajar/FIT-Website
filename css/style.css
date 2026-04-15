@@ -1209,3 +1209,74 @@ img {
     font-size: 1.5rem;
   }
 }
+
+/* ---------- Footer Grid (flex column, no Bootstrap row) ---------- */
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Di layar >= md (768px): susun horizontal dalam satu baris */
+@media (min-width: 768px) {
+  .footer-grid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .footer-col-brand {
+    flex: 0 0 220px;
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Mobile: center semua konten */
+@media (max-width: 767.98px) {
+  .footer-col {
+    align-items: start;
+    text-align: center;
+  }
+
+  .footer-col .list-unstyled {
+    text-align: center;
+  }
+}
+
+.footer-contact-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: var(--transition-smooth);
+  line-height: 1.4;
+}
+
+.footer-contact-link:hover {
+  color: var(--accent-cyan);
+}
+
+.footer-wa-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.5rem;
+}

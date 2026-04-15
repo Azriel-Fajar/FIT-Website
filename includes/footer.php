@@ -7,54 +7,56 @@
 <!-- Footer -->
 <footer class="footer-fit">
     <div class="container">
-        <div class="row gy-4 mb-4">
-            <!-- Logo -->
-            <div class="col-lg-4 col-md-6 text-center text-lg-start">
+
+        <div class="footer-grid">
+
+            <!-- Logo & Tagline -->
+            <div class="footer-col footer-col-brand">
                 <img src="img/LOGO FIT 2026 FULL.png" alt="FIT Competition 2026" class="footer-logo">
-                <p class="text-secondary small mb-0" style="max-width: 280px;">
+                <p class="text-secondary small mb-0">
                     Digital Impact for Humanitarian Response and Global Well-Being
                 </p>
             </div>
 
             <!-- Quick Links -->
-            <div class="col-lg-2 col-md-6 col-6 text-center text-lg-start">
+            <div class="footer-col">
                 <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="index.php#competition-category">Category</a></li>
-                    <li class="mb-2"><a href="aboutus.php">About Us</a></li>
-                    <li class="mb-2"><a href="winnerpage.php">Winner</a></li>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="/#competition-category">Category</a></li>
+                    <li class="mb-2"><a href="/about">About Us</a></li>
+                    <li class="mb-2"><a href="/winner">Winner</a></li>
                 </ul>
             </div>
 
             <!-- Contact Us -->
-            <div class="col-lg-3 col-md-6 col-6 text-center text-lg-start">
+            <div class="footer-col">
                 <h5>Contact Us</h5>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled mb-0">
                     <li class="mb-2">
-                        <a href="http://wa.me/6281918559487" target="_blank" class="d-inline-flex align-items-center gap-2">
-                            <img src="icons/whatsapp.svg" alt="WhatsApp" style="width:18px;height:18px;filter:brightness(0) invert(1);opacity:0.7;">
-                            Data Science (Christo)
+                        <a href="http://wa.me/6281918559487" target="_blank" class="footer-contact-link">
+                            <img src="icons/whatsapp.svg" alt="WhatsApp" class="footer-wa-icon">
+                            <span>Data Science (Christo)</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="http://wa.me/6285326378976" target="_blank" class="d-inline-flex align-items-center gap-2">
-                            <img src="icons/whatsapp.svg" alt="WhatsApp" style="width:18px;height:18px;filter:brightness(0) invert(1);opacity:0.7;">
-                            Web & App (Gavriel)
+                        <a href="http://wa.me/6285326378976" target="_blank" class="footer-contact-link">
+                            <img src="icons/whatsapp.svg" alt="WhatsApp" class="footer-wa-icon">
+                            <span>Web & App (Gavriel)</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="http://wa.me/6288238463537" target="_blank" class="d-inline-flex align-items-center gap-2">
-                            <img src="icons/whatsapp.svg" alt="WhatsApp" style="width:18px;height:18px;filter:brightness(0) invert(1);opacity:0.7;">
-                            Cybersecurity (Yusak)
+                        <a href="http://wa.me/6288238463537" target="_blank" class="footer-contact-link">
+                            <img src="icons/whatsapp.svg" alt="WhatsApp" class="footer-wa-icon">
+                            <span>Cybersecurity (Yusak)</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
             <!-- Social Media -->
-            <div class="col-lg-3 col-md-6 text-center text-lg-start">
+            <div class="footer-col">
                 <h5>Social Media</h5>
-                <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+                <div class="footer-socials">
                     <a href="https://www.instagram.com/fitcompetition26" target="_blank" class="social-icon" title="Instagram">
                         <img src="icons/instagram.svg" alt="Instagram">
                     </a>
@@ -63,12 +65,14 @@
                     </a>
                 </div>
             </div>
+
         </div>
 
         <!-- Copyright -->
         <div class="footer-copyright text-center">
             &copy; <?php echo date('Y'); ?> FIT Competition. All Rights Reserved.
         </div>
+
     </div>
 </footer>
 
