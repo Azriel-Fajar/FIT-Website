@@ -116,29 +116,33 @@ switch ($timelineCategory) {
                 <?php foreach ($timelineItems as $index => $item):
                     $stepNum = str_pad($index + 1, 2, '0', STR_PAD_LEFT);
                     $isLast  = ($index === count($timelineItems) - 1);
+                    $isEven  = ($index % 2 === 1);
                 ?>
-                <div class="tl-step<?= $isLast ? ' tl-step--last' : '' ?>">
-                    <!-- connector line -->
-                    <?php if (!$isLast): ?>
-                        <div class="tl-connector">
-                            <div class="tl-connector-line"></div>
-                            <div class="tl-connector-arrow">
-                                <i class="bi bi-chevron-right"></i>
-                            </div>
-                        </div>
-                    <?php endif; ?>
+                <div class="tl-step<?= $isLast ? ' tl-step--last' : '' ?><?= $isEven ? ' tl-step--even' : '' ?>">
 
-                    <!-- node -->
-                    <div class="tl-node-wrap">
-                        <div class="tl-node-ring"></div>
-                        <div class="tl-node">
-                            <i class="bi <?= $item['icon'] ?>"></i>
-                        </div>
+                    <!-- Phase number (large, decorative) -->
+                    <div class="tl-phase-num">
+                        <span class="tl-phase-label">Phase</span>
+                        <span class="tl-phase-digit"><?= $stepNum ?></span>
                     </div>
 
-                    <!-- card -->
-                    <div class="tl-card glass-light">
-                        <span class="tl-step-badge"><?= $stepNum ?></span>
+                    <!-- Central spine: node + connector -->
+                    <div class="tl-col-center">
+                        <div class="tl-node-wrap">
+                            <div class="tl-node-ring"></div>
+                            <div class="tl-node">
+                                <i class="bi <?= $item['icon'] ?>"></i>
+                            </div>
+                        </div>
+                        <?php if (!$isLast): ?>
+                            <div class="tl-spine-segment"></div>
+                        <?php endif; ?>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="tl-card">
+                        <div class="tl-card-accent"></div>
+                        <span class="tl-step-badge">STEP <?= $stepNum ?></span>
                         <h4 class="tl-card-title"><?= htmlspecialchars($item['title']) ?></h4>
                         <div class="tl-card-date">
                             <i class="bi bi-calendar3"></i>
@@ -151,6 +155,7 @@ switch ($timelineCategory) {
                             </div>
                         <?php endif; ?>
                     </div>
+
                 </div>
                 <?php endforeach; ?>
             </div>
