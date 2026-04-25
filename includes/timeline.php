@@ -111,25 +111,49 @@ switch ($timelineCategory) {
             <div class="title-line"></div>
         </div>
 
-        <div class="timeline">
-            <?php foreach ($timelineItems as $index => $item): ?>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-light">
-                        <div class="timeline-date">
-                            <i class="bi <?php echo $item['icon']; ?> me-1"></i>
-                            <?php echo $item['date']; ?>
+        <div class="tl-wrapper fade-in-up">
+            <div class="tl-scroll-track">
+                <?php foreach ($timelineItems as $index => $item):
+                    $stepNum = str_pad($index + 1, 2, '0', STR_PAD_LEFT);
+                    $isLast  = ($index === count($timelineItems) - 1);
+                ?>
+                <div class="tl-step<?= $isLast ? ' tl-step--last' : '' ?>">
+                    <!-- connector line -->
+                    <?php if (!$isLast): ?>
+                        <div class="tl-connector">
+                            <div class="tl-connector-line"></div>
+                            <div class="tl-connector-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
                         </div>
-                        <div class="timeline-title"><?php echo $item['title']; ?></div>
+                    <?php endif; ?>
+
+                    <!-- node -->
+                    <div class="tl-node-wrap">
+                        <div class="tl-node-ring"></div>
+                        <div class="tl-node">
+                            <i class="bi <?= $item['icon'] ?>"></i>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="tl-card glass-light">
+                        <span class="tl-step-badge"><?= $stepNum ?></span>
+                        <h4 class="tl-card-title"><?= htmlspecialchars($item['title']) ?></h4>
+                        <div class="tl-card-date">
+                            <i class="bi bi-calendar3"></i>
+                            <span><?= htmlspecialchars($item['date']) ?></span>
+                        </div>
                         <?php if (!empty($item['location'])): ?>
-                            <div class="timeline-location">
-                                <i class="bi bi-geo-alt me-1"></i><?php echo $item['location']; ?>
+                            <div class="tl-card-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span><?= htmlspecialchars($item['location']) ?></span>
                             </div>
                         <?php endif; ?>
                     </div>
-                    <span class="timeline-number"><?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?></span>
                 </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 </section>

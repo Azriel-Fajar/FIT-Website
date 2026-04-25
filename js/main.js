@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(el);
   });
 
-  // Observe timeline items
-  document.querySelectorAll(".timeline-item").forEach(function (el, index) {
-    el.style.transitionDelay = index * 0.12 + "s";
+  // Observe timeline steps
+  document.querySelectorAll(".tl-step").forEach(function (el, index) {
+    el.style.transitionDelay = index * 0.08 + "s";
     observer.observe(el);
   });
 

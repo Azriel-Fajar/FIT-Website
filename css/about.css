@@ -2,6 +2,30 @@
    FIT Competition 2026 - About Us Page Stylesheet
    ============================================ */
 
+/* ---------- About Description Card ---------- */
+.about-card {
+  border-radius: 1.25rem;
+  padding: 3rem;
+}
+
+.about-card p {
+  color: var(--text-secondary);
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .about-card {
+    padding: 1.75rem;
+  }
+}
+
 /* ---------- About Hero ---------- */
 .about-hero {
   padding: 6rem 0 3rem;
