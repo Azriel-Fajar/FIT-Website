@@ -1,7 +1,9 @@
 <?php
+require_once 'config.php';
 $pageTitle = 'FIT Competition 2026 - Data Science';
 $pageDescription = 'Data Science Category - FIT Competition 2026. Analyze data and build the best machine learning model.';
 $activePage = 'category-data';
+$pageCSS = 'category';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>

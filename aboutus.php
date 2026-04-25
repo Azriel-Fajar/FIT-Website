@@ -1,7 +1,9 @@
 <?php
+require_once 'config.php';
 $pageTitle = 'FIT Competition 2026 - About Us';
 $pageDescription = 'About FIT Competition 2026 - Sponsors and partners of the FTI UKSW information technology competition.';
 $activePage = 'about';
+$pageCSS = 'about';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>

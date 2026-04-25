@@ -1,7 +1,9 @@
 <?php
+require_once 'config.php';
 $pageTitle = 'FIT Competition 2026 - Winner Announcement';
 $pageDescription = 'Winner announcement for FIT Competition 2026.';
 $activePage = '';
+$pageCSS = 'home';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>

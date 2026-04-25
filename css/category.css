@@ -1,0 +1,283 @@
+/* ============================================
+   FIT Competition 2026 - Category Page Stylesheet
+   Category Hero, Countdown, Guidebook, Rules
+   ============================================ */
+
+/* ---------- Category Page Hero ---------- */
+.category-hero {
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+
+.category-hero-icon {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 12px 30px rgba(17, 105, 142, 0.3));
+  animation: heroFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.category-hero h1 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.category-hero h2 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+.category-hero p {
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* ---------- Countdown Section ---------- */
+.countdown-section {
+  padding: 4rem 0;
+}
+
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.countdown-box {
+  border-radius: 1rem;
+  padding: 1.5rem 1.2rem;
+  min-width: 100px;
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.countdown-box:hover {
+  transform: translateY(-4px);
+  border-color: rgba(17, 105, 142, 0.5);
+}
+
+.countdown-value {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ---------- Guidebook Section ---------- */
+.guidebook-section {
+  padding: 4rem 0;
+}
+
+.guidebook-card {
+  border-radius: 1.25rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.guidebook-card p {
+  color: var(--text-secondary);
+  font-size: 0.93rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Rules/Requirements Section ---------- */
+.requirements-section {
+  padding: 4rem 0;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.requirements-list li {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent-green);
+  background: var(--glass-bg);
+  border-radius: 0.75rem;
+  color: var(--text-secondary);
+  transition: var(--transition-smooth);
+}
+
+.requirements-list li:hover {
+  transform: translateX(5px);
+  border-left-color: var(--primary-teal);
+  background: rgba(17, 105, 142, 0.15);
+}
+
+.requirements-list strong {
+  color: var(--accent-green);
+}
+
+/* ---------- Timeline for Category ---------- */
+.category-timeline {
+  padding: 3rem 0;
+}
+
+.category-timeline-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.category-timeline-item::before {
+  content: "►";
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-size: 1.2rem;
+}
+
+.category-timeline-title {
+  font-weight: 600;
+  color: var(--accent-light);
+  margin-bottom: 0.3rem;
+}
+
+.category-timeline-desc {
+  font-size: 0.9rem;
+}
+
+/* ---------- Section Cards Grid ---------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.info-card {
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transition: var(--transition-smooth);
+  text-align: center;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(17, 105, 142, 0.5);
+  box-shadow: 0 16px 40px rgba(17, 105, 142, 0.2);
+}
+
+.info-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-green);
+}
+
+.info-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--accent-light);
+}
+
+.info-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px) {
+  .category-hero h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .category-hero {
+    padding: 4rem 0 2rem;
+  }
+
+  .category-hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .category-hero-icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .countdown-box {
+    min-width: 75px;
+    padding: 1rem 0.8rem;
+  }
+
+  .countdown-value {
+    font-size: 1.8rem;
+  }
+
+  .guidebook-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .countdown-wrapper {
+    gap: 0.5rem;
+  }
+
+  .countdown-box {
+    min-width: 65px;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .countdown-value {
+    font-size: 1.5rem;
+  }
+
+  .requirements-list li {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}

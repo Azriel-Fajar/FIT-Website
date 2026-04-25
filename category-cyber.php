@@ -1,7 +1,9 @@
 <?php
+require_once 'config.php';
 $pageTitle = 'FIT Competition 2026 - Cyber Security';
 $pageDescription = 'Cyber Security Category - FIT Competition 2026. Capture The Flag (CTF) - Test your cybersecurity skills.';
 $activePage = 'category-cyber';
+$pageCSS = 'category';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>

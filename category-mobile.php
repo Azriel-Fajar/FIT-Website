@@ -1,7 +1,9 @@
 <?php
+require_once 'config.php';
 $pageTitle = 'FIT Competition 2026 - Mobile Application';
 $pageDescription = 'Mobile Application Category - FIT Competition 2026. Develop an innovative mobile app that delivers real-world solutions.';
 $activePage = 'category-mobile';
+$pageCSS = 'category';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>

@@ -1,7 +1,9 @@
 <?php
+require_once 'config.php';
 $pageTitle = 'FIT Competition 2026 - Digital Impact for Humanitarian Response';
 $pageDescription = 'FIT Competition 2026 - The largest information technology competition at FTI UKSW. Digital Impact for Humanitarian Response and Global Well-Being.';
 $activePage = 'home';
+$pageCSS = 'home';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>

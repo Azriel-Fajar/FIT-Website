@@ -1,7 +1,9 @@
 <?php
+require_once 'config.php';
 $pageTitle = 'FIT Competition 2026 - Web Development';
 $pageDescription = 'Web Development Category - FIT Competition 2026. Showcase your skills in designing and building innovative websites.';
 $activePage = 'category-web';
+$pageCSS = 'category';
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>
