@@ -68,7 +68,7 @@ include 'includes/navbar.php';
                                         <div class="col-md-8">
                                             <h3>Web Development</h3>
                                             <p>The Web Development competition challenges participants to showcase their skills in designing and building innovative, responsive, and fully functional websites or web applications.</p>
-                                            <a href="category.php" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
+                                            <a href="<?php echo route('/category'); ?>" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ include 'includes/navbar.php';
                                         <div class="col-md-8">
                                             <h3>Data Science</h3>
                                             <p>In the Data Science category, each team will be presented with a challenge that requires them to analyze and develop the best model using machine learning or deep learning to solve a problem based on a given dataset.</p>
-                                            <a href="category-data.php" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
+                                            <a href="<?php echo route('/category-data'); ?>" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ include 'includes/navbar.php';
                                         <div class="col-md-8">
                                             <h3>Mobile Application</h3>
                                             <p>The Mobile Application competition challenges participants to develop a mobile app that is not only innovative but also capable of delivering real solutions to everyday user needs.</p>
-                                            <a href="category-mobile.php" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
+                                            <a href="<?php echo route('/category-mobile'); ?>" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@ include 'includes/navbar.php';
                                         <div class="col-md-8">
                                             <h3>Cyber Security</h3>
                                             <p>The Cyber Security competition in a Capture the Flag (CTF) format invites participants to test and develop their skills in identifying and exploiting vulnerabilities in the digital world.</p>
-                                            <a href="category-cyber.php" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
+                                            <a href="<?php echo route('/category-cyber'); ?>" class="btn-outline-glow">More Details <i class="bi bi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
                                 </div>
