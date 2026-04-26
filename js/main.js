@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(function (entry) {
           if (entry.isIntersecting && !counted) {
             counted = true;
-            animateCount(prizeTotal, 0, 66000000, 2000);
+            animateCount(prizeTotal, 0, 71000000, 2000);
           }
         });
       },

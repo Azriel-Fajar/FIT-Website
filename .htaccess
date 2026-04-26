@@ -1,20 +1,23 @@
 # FIT Competition 2026 - Clean URL Routing
-# Auto-works on localhost and cPanel subdirectories
+# Works on localhost (subdirectory) and production (domain root)
 
 Options -MultiViews
 RewriteEngine On
-
-# Set RewriteBase to match the subdirectory on localhost
-RewriteBase /FIT%20Website/
 
 # Serve real files and directories directly
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Redirect .php extensions to clean URLs
+# Redirect .php extensions to clean URLs (localhost subdirectory)
+RewriteCond %{HTTP_HOST} ^localhost$ [NC]
 RewriteCond %{THE_REQUEST} \s/+FIT%20Website/(.+?)\.php[\s?] [NC]
 RewriteRule ^ /FIT%20Website/%1 [R=301,L,NE]
+
+# Redirect .php extensions to clean URLs (production)
+RewriteCond %{HTTP_HOST} !^localhost$ [NC]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
 
 # Route clean URLs to PHP files
 RewriteRule ^/?$ index.php [L,QSA]
@@ -26,4 +29,4 @@ RewriteRule ^category-mobile/?$ category-mobile.php [L,QSA]
 RewriteRule ^category-cyber/?$ category-cyber.php [L,QSA]
 
 # Fallback to 404.php for not found pages
-ErrorDocument 404 /FIT%20Website/404.php
+ErrorDocument 404 /404.php

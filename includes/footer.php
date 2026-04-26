@@ -24,7 +24,7 @@ require_once dirname(__FILE__) . '/../config.php';
                 <ul class="list-unstyled mb-0">
                     <li class="mb-2"><a href="<?php echo route('/'); ?>#competition-category">Category</a></li>
                     <li class="mb-2"><a href="<?php echo route('/about'); ?>">About Us</a></li>
-                    <li class="mb-2"><a href="<?php echo route('/winner'); ?>">Winner</a></li>
+                    <li class="mb-2 text-start"><a href="<?php echo route('/winner'); ?>">Winner</a></li>
                 </ul>
             </div>
 
@@ -33,9 +33,9 @@ require_once dirname(__FILE__) . '/../config.php';
                 <h5>Contact Us</h5>
                 <ul class="list-unstyled mb-0">
                     <li class="mb-2">
-                        <a href="http://wa.me/6281918559487" target="_blank" class="footer-contact-link">
+                        <a href="http://wa.me/6281278000894" target="_blank" class="footer-contact-link">
                             <img src="<?php echo asset('icons/whatsapp.svg'); ?>" alt="WhatsApp" class="footer-wa-icon" loading="lazy">
-                            <span>Data Science (Christo)</span>
+                            <span>Data Science (Cynthia)</span>
                         </a>
                     </li>
                     <li class="mb-2">
