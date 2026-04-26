@@ -65,12 +65,12 @@ include 'includes/navbar.php';
         <div class="row justify-content-center align-items-center g-4 g-md-5 mt-2">
             <div class="col-auto fade-in-up">
                 <div class="glass p-3 p-md-4 text-center" style="border-radius: 1rem;">
-                    <img src="img/sponsor/logo-alfamart.png" alt="Alfamart" class="sponsor-logo" style="max-height: 80px;">
+                    <img src="img/sponsor/logo-alfamart.png" alt="Alfamart" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
                 </div>
             </div>
             <div class="col-auto fade-in-up">
                 <div class="sponsor-card-bg" style="border-radius: 1rem;">
-                    <img src="img/sponsor/logo-tcp.png" alt="TCP" class="sponsor-logo" style="max-height: 80px;">
+                    <img src="img/sponsor/logo-tcp.png" alt="TCP" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
                 </div>
             </div>
         </div>

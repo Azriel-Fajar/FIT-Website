@@ -17,7 +17,7 @@ include 'includes/navbar.php';
         <p>
             In the Data Science category, each team will be presented with a challenge that requires them to analyze and develop the best model using machine learning or deep learning to solve a problem based on a given dataset. There will be two types of datasets provided: Image Datasets and Tabular Datasets. Image Datasets can be analyzed using classification, segmentation, or object detection methods, while Tabular Datasets can be analyzed using regression, classification, clustering, or time series forecasting methods. Each team is allowed to use one or more datasets of the same or different types.
         </p>
-        <a href="https://forms.gle/MAPcGSocrGUf6gan9" target="_blank" class="btn-glow">
+        <a href="https://forms.gle/R8GzGoTGpPKtVNZNA" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
         </a>
     </div>

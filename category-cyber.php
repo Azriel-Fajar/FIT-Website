@@ -17,7 +17,7 @@ include 'includes/navbar.php';
         <p>
             The Cyber Security competition in a Capture the Flag (CTF) format invites participants to test and develop their skills in identifying and exploiting vulnerabilities in the digital world. Participants will face challenges that put their cybersecurity expertise to the test, from exploiting application vulnerabilities to uncovering and preventing digital threats. The competition follows a CTF Jeopardy Style format with five challenge categories: Cryptography, Web Exploitation, Forensics, Steganography, and Miscellaneous.
         </p>
-        <a href="https://forms.gle/ua6u3LjcyeVEtGJA6" target="_blank" class="btn-glow">
+        <a href="https://forms.gle/WyU9pZMcPoU8aQn57" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
         </a>
     </div>

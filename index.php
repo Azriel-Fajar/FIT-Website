@@ -173,7 +173,7 @@ include 'includes/navbar.php';
                 </div>
             </div>
             <div class="col-lg-4 text-center fade-in-up">
-                <img src="img/FIT-Logo.png" alt="FIT Competition 2026" class="hero-logo" style="max-width: 250px;">
+                <img src="img/FIT-Logo.png" alt="FIT Competition 2026" class="hero-logo" style="max-width: 250px;" loading="lazy">
             </div>
         </div>
     </div>

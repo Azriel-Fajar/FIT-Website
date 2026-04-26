@@ -17,7 +17,7 @@ include 'includes/navbar.php';
         <p>
             In the Mobile Application category, participants are expected to build an innovative mobile application that provides a solution to a specific problem. The competition covers the full development workflow, supports both Android and iOS platforms, and evaluates entries on criteria such as functionality, interface design, and overall user experience.
         </p>
-        <a href="https://forms.gle/LdyrgDz8MhieJ8DU6" target="_blank" class="btn-glow">
+        <a href="https://forms.gle/1rE4aVwjYpEHWrAB7" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
         </a>
     </div>

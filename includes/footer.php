@@ -12,7 +12,7 @@ require_once dirname(__FILE__) . '/../config.php';
 
             <!-- Logo & Tagline -->
             <div class="footer-col footer-col-brand">
-                <img src="<?php echo asset('img/LOGO FIT 2026 FULL.png'); ?>" alt="FIT Competition 2026" class="footer-logo">
+                <img src="<?php echo asset('img/LOGO FIT 2026 FULL.png'); ?>" alt="FIT Competition 2026" class="footer-logo" loading="lazy">
                 <p class="text-secondary small mb-0">
                     Digital Impact for Humanitarian Response and Global Well-Being
                 </p>
@@ -34,19 +34,19 @@ require_once dirname(__FILE__) . '/../config.php';
                 <ul class="list-unstyled mb-0">
                     <li class="mb-2">
                         <a href="http://wa.me/6281918559487" target="_blank" class="footer-contact-link">
-                            <img src="<?php echo asset('icons/whatsapp.svg'); ?>" alt="WhatsApp" class="footer-wa-icon">
+                            <img src="<?php echo asset('icons/whatsapp.svg'); ?>" alt="WhatsApp" class="footer-wa-icon" loading="lazy">
                             <span>Data Science (Christo)</span>
                         </a>
                     </li>
                     <li class="mb-2">
                         <a href="http://wa.me/6285326378976" target="_blank" class="footer-contact-link">
-                            <img src="<?php echo asset('icons/whatsapp.svg'); ?>" alt="WhatsApp" class="footer-wa-icon">
+                            <img src="<?php echo asset('icons/whatsapp.svg'); ?>" alt="WhatsApp" class="footer-wa-icon" loading="lazy">
                             <span>Web & App (Gavriel)</span>
                         </a>
                     </li>
                     <li class="mb-2">
                         <a href="http://wa.me/6288238463537" target="_blank" class="footer-contact-link">
-                            <img src="<?php echo asset('icons/whatsapp.svg'); ?>" alt="WhatsApp" class="footer-wa-icon">
+                            <img src="<?php echo asset('icons/whatsapp.svg'); ?>" alt="WhatsApp" class="footer-wa-icon" loading="lazy">
                             <span>Cybersecurity (Yusak)</span>
                         </a>
                     </li>
@@ -58,10 +58,10 @@ require_once dirname(__FILE__) . '/../config.php';
                 <h5>Social Media</h5>
                 <div class="footer-socials">
                     <a href="https://www.instagram.com/fitcompetition26" target="_blank" class="social-icon" title="Instagram">
-                        <img src="<?php echo asset('icons/instagram.svg'); ?>" alt="Instagram">
+                        <img src="<?php echo asset('icons/instagram.svg'); ?>" alt="Instagram" loading="lazy">
                     </a>
                     <a href="https://www.tiktok.com/@fit.competition" target="_blank" class="social-icon" title="TikTok">
-                        <img src="<?php echo asset('icons/tiktok.svg'); ?>" alt="TikTok">
+                        <img src="<?php echo asset('icons/tiktok.svg'); ?>" alt="TikTok" loading="lazy">
                     </a>
                 </div>
             </div>

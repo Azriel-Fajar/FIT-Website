@@ -17,7 +17,7 @@ include 'includes/navbar.php';
         <p>
             The Web Development competition challenges participants to showcase their skills in designing and building innovative, responsive, and fully functional websites or web applications. Participants are tasked with creating web-based solutions that deliver a positive impact aligned with the competition theme. Each team or individual is expected to integrate relevant technologies, prioritize user experience (UI/UX), and ensure the performance and security of the developed website. Participants are free to use any programming language or framework of their choice, with the final product being either a static or dynamic website.
         </p>
-        <a href="https://forms.gle/LdyrgDz8MhieJ8DU6" target="_blank" class="btn-glow">
+        <a href="https://forms.gle/1rE4aVwjYpEHWrAB7" target="_blank" class="btn-glow">
             <i class="bi bi-pencil-square me-2"></i>Register Now
         </a>
     </div>
