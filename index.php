@@ -30,7 +30,7 @@ include 'includes/navbar.php';
             </div>
             <div class="col-lg-5 text-center mt-5 mt-lg-0">
                 <div class="fade-in-up">
-                    <img src="img/FIT-Logo.png" alt="FIT Competition 2026 Logo" class="hero-logo">
+                    <img src="<?php echo asset('img/FIT-Logo.png'); ?>" alt="FIT Competition 2026 Logo" class="hero-logo">
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@ include 'includes/navbar.php';
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-md-4 text-center mb-3 mb-md-0">
-                                            <img src="img/carousel/Carousel-Web-Dev.png" alt="Web Development" class="category-icon" loading="lazy">
+                                            <img src="<?php echo asset('img/carousel/Carousel-Web-Dev.png'); ?>" alt="Web Development" class="category-icon" loading="lazy">
                                         </div>
                                         <div class="col-md-8">
                                             <h3>Web Development</h3>
@@ -85,7 +85,7 @@ include 'includes/navbar.php';
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-md-4 text-center mb-3 mb-md-0">
-                                            <img src="img/carousel/Carousel-Data-Science.png" alt="Data Science" class="category-icon" loading="lazy">
+                                            <img src="<?php echo asset('img/carousel/Carousel-Data-Science.png'); ?>" alt="Data Science" class="category-icon" loading="lazy">
                                         </div>
                                         <div class="col-md-8">
                                             <h3>Data Science</h3>
@@ -107,7 +107,7 @@ include 'includes/navbar.php';
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-md-4 text-center mb-3 mb-md-0">
-                                            <img src="img/carousel/Carousel-Mobile-App.png" alt="Mobile Application" class="category-icon" loading="lazy">
+                                            <img src="<?php echo asset('img/carousel/Carousel-Mobile-App.png'); ?>" alt="Mobile Application" class="category-icon" loading="lazy">
                                         </div>
                                         <div class="col-md-8">
                                             <h3>Mobile Application</h3>
@@ -129,7 +129,7 @@ include 'includes/navbar.php';
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-md-4 text-center mb-3 mb-md-0">
-                                            <img src="img/carousel/Carousel-Cyber-Sec.png" alt="Cyber Security" class="category-icon" loading="lazy">
+                                            <img src="<?php echo asset('img/carousel/Carousel-Cyber-Sec.png'); ?>" alt="Cyber Security" class="category-icon" loading="lazy">
                                         </div>
                                         <div class="col-md-8">
                                             <h3>Cyber Security</h3>
@@ -173,7 +173,7 @@ include 'includes/navbar.php';
                 </div>
             </div>
             <div class="col-lg-4 text-center fade-in-up">
-                <img src="img/FIT-Logo.png" alt="FIT Competition 2026" class="hero-logo" style="max-width: 250px;" loading="lazy">
+                <img src="<?php echo asset('img/FIT-Logo.png'); ?>" alt="FIT Competition 2026" class="hero-logo" style="max-width: 250px;" loading="lazy">
             </div>
         </div>
     </div>

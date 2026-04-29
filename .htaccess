@@ -28,10 +28,21 @@ RewriteRule ^category-data/?$ category-data.php [L,QSA]
 RewriteRule ^category-mobile/?$ category-mobile.php [L,QSA]
 RewriteRule ^category-cyber/?$ category-cyber.php [L,QSA]
 
-# Fallback to 404.php for not found pages
-<If "%{HTTP_HOST} == 'localhost'">
-    ErrorDocument 404 /FIT%20Website/404.php
-</If>
-<Else>
-    ErrorDocument 404 /404.php
-</Else>
+# 404 fallback - production (domain root)
+ErrorDocument 404 /404.php
+
+# Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# Browser caching for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/pdf "access plus 1 month"
+</IfModule>

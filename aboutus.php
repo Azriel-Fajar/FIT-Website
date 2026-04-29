@@ -13,7 +13,7 @@ include 'includes/navbar.php';
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-5 text-center fade-in-up">
-                <img src="img/FIT-Logo.png" alt="FIT Competition 2026" class="hero-logo" style="max-width: 280px;">
+                <img src="<?php echo asset('img/FIT-Logo.png'); ?>" alt="FIT Competition 2026" class="hero-logo" style="max-width: 280px;">
             </div>
             <div class="col-lg-7 fade-in-up">
                 <div class="about-card glass">
@@ -65,12 +65,22 @@ include 'includes/navbar.php';
         <div class="row justify-content-center align-items-center g-4 g-md-5 mt-2">
             <div class="col-auto fade-in-up">
                 <div class="glass p-3 p-md-4 text-center" style="border-radius: 1rem;">
-                    <img src="img/sponsor/logo-alfamart.png" alt="Alfamart" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
+                    <img src="<?php echo asset('img/sponsor/logo-alfamart.png'); ?>" alt="Alfamart" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
                 </div>
             </div>
             <div class="col-auto fade-in-up">
                 <div class="sponsor-card-bg" style="border-radius: 1rem;">
-                    <img src="img/sponsor/logo-tcp.png" alt="TCP" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
+                    <img src="<?php echo asset('img/sponsor/dicoding.png'); ?>" alt="TCP" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
+                </div>
+            </div>
+            <div class="col-auto fade-in-up">
+                <div class="sponsor-card-bg" style="border-radius: 1rem;">
+                    <img src="<?php echo asset('img/sponsor/sae.png'); ?>" alt="TCP" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
+                </div>
+            </div>
+            <div class="col-auto fade-in-up">
+                <div class="sponsor-card-bg" style="border-radius: 1rem;">
+                    <img src="<?php echo asset('img/sponsor/rent-gold.png'); ?>" alt="TCP" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
                 </div>
             </div>
         </div>

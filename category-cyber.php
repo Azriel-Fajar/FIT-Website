@@ -11,7 +11,7 @@ include 'includes/navbar.php';
 <!-- Hero Section -->
 <section class="category-hero">
     <div class="container fade-in-up">
-        <img src="img/cyber/Logo-Page-Cyber.png" alt="Cyber Security" class="category-hero-icon">
+        <img src="<?php echo asset('img/cyber/Logo-Page-Cyber.png'); ?>" alt="Cyber Security" class="category-hero-icon">
         <h1>FIT Competition 2026</h1>
         <h2>Cyber Security</h2>
         <p>
