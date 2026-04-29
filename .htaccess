@@ -29,4 +29,9 @@ RewriteRule ^category-mobile/?$ category-mobile.php [L,QSA]
 RewriteRule ^category-cyber/?$ category-cyber.php [L,QSA]
 
 # Fallback to 404.php for not found pages
-ErrorDocument 404 /404.php
+<If "%{HTTP_HOST} == 'localhost'">
+    ErrorDocument 404 /FIT%20Website/404.php
+</If>
+<Else>
+    ErrorDocument 404 /404.php
+</Else>

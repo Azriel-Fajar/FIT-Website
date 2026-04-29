@@ -16,7 +16,7 @@ There is no build system, package manager, or test suite. Changes to PHP/CSS/JS 
 
 **Stack:** Vanilla PHP + Bootstrap 5.3.3 (CDN) + Vanilla JS. No frameworks, no bundler, no npm dependencies.
 
-**URL Routing:** `.htaccess` rewrites clean URLs to PHP files. The `RewriteBase` is set to `/FIT%20Website/` to match the folder name with a space:
+**URL Routing:** `.htaccess` rewrites clean URLs to PHP files. Uses explicit `THE_REQUEST` conditions for localhost vs production — no `RewriteBase` directive:
 - `/` → `index.php`
 - `/about` → `aboutus.php`
 - `/winner` → `winnerpage.php`
@@ -68,8 +68,7 @@ Design language is glassmorphism (`.glass` utility class) on dark navy gradients
 
 ## JavaScript
 
-- `main.js` — Loaded globally via `footer.php`. Handles: navbar `.scrolled` class at 50 px scroll, countdown timer targeting `2026-05-01`, Intersection Observer scroll-reveal for `.fade-in-up` and `.tl-step` elements, prize pool counter animation (0 → 66,000,000 Rupiah) triggered when `#prize-total` enters viewport, Bootstrap offcanvas close on nav link click
-- `category.js` — Legacy file; not currently loaded by any page
+- `main.js` — Loaded globally via `footer.php`. Handles: navbar `.scrolled` class at 50 px scroll, countdown timer targeting `2026-05-01`, Intersection Observer scroll-reveal for `.fade-in-up` and `.tl-step` elements, prize pool counter animation (0 → 71,000,000 Rupiah) triggered when `#prize-total` enters viewport, Bootstrap offcanvas close on nav link click
 
 ## Image Assets
 

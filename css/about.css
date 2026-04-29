@@ -385,3 +385,30 @@
     padding: 1.5rem;
   }
 }
+
+/* ---------- Sponsors Section ---------- */
+.sponsors-section {
+  padding: 5rem 0;
+}
+
+.sponsor-logo {
+  max-height: 100px;
+  width: auto;
+  filter: brightness(1);
+  transition: var(--transition-smooth);
+  padding: 1rem;
+}
+
+.sponsor-logo:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+.sponsor-card-bg {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -189,7 +189,7 @@ include 'includes/navbar.php';
             <h2 class="section-title"><span class="gradient-text">Winner Announcement</span></h2>
             <div class="title-line"></div>
         </div>
-        <a href="winnerpage.php" class="btn-glow mt-3">
+        <a href="<?php echo route('/winner'); ?>" class="btn-glow mt-3">
             View Winners <i class="bi bi-arrow-right ms-1"></i>
         </a>
     </div>
