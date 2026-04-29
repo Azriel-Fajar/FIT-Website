@@ -66,8 +66,8 @@ include 'includes/timeline.php'; ?>
             <p>
                 The Cyber Security competition tests participants' ability to understand and solve cybersecurity challenges. The guidebook outlines the competition format (CTF), challenge types (Cryptography, Web Exploitation, Forensics, Steganography, and Miscellaneous), and a scoring system based on points and solving speed.
             </p>
-            <a href="https://drive.google.com/file/d/1Qdb076vvny343LyBm-hpwfj9HCup_iuS/view" target="_blank" class="btn-glow">
-                <i class="bi bi-file-earmark-text me-2"></i>Download Guidebook
+            <a href="<?= asset('guidebooks/FIT COMPETITION 2026 GUIDEBOOK CYBER SECURITY.pdf') ?>" download class="btn-glow">
+                <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Guidebook
             </a>
         </div>
     </div>
