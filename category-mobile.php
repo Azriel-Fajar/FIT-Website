@@ -66,7 +66,7 @@ include 'includes/timeline.php'; ?>
             <p>
                 The Mobile Application competition challenges participants to develop a mobile app that is not only innovative but also capable of delivering real, practical solutions to users. The app must include interactive features, an intuitive interface, and adapt to user needs across various aspects of daily life. Entries must align with the competition theme and demonstrate stability, efficiency, and an optimal user experience. Participants may use any mobile development platform, programming language, or framework of their choice.
             </p>
-            <a href="<?= asset('guidebooks/FIT COMPETITION 2026 GUIDEBOOK WEB&APP.pdf') ?>" download class="btn-glow">
+            <a href="<?= asset('guidebooks/GuideBook Mobile Application.pdf') ?>" download class="btn-glow">
                 <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Guidebook
             </a>
         </div>

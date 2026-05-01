@@ -66,7 +66,7 @@ include 'includes/timeline.php'; ?>
             <p>
                 The Web Development competition challenges participants to build a website that is functional, responsive, and visually appealing. The guidebook covers technical requirements, the competition theme, technology usage constraints, and evaluation criteria such as performance, UX/UI, and code quality.
             </p>
-            <a href="<?= asset('guidebooks/FIT COMPETITION 2026 GUIDEBOOK WEB&APP.pdf') ?>" download class="btn-glow">
+            <a href="<?= asset('guidebooks/GuideBook Web Development.pdf') ?>" download class="btn-glow">
                 <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Guidebook
             </a>
         </div>
