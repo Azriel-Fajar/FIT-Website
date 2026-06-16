@@ -21,7 +21,7 @@ if (!isset($pageCSS)) $pageCSS = null;
 
     <!-- Favicon -->
     <link rel="icon" href="<?php echo asset('icons/FIT-Logo.png'); ?>" type="image/png">
-    <link rel="apple-touch-icon" href="<?php echo asset('icons/logo-fit.png'); ?>">
+    <link rel="apple-touch-icon" href="<?php echo asset('icons/LOGO FIT 2026 FULL.png'); ?>">
 
     <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">

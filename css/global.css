@@ -57,8 +57,14 @@ body {
   background: var(--primary-dark);
   color: var(--text-primary);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   line-height: 1.7;
+}
+
+.footer-fit {
+  margin-top: auto;
 }
 
 a {

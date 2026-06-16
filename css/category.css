@@ -52,50 +52,6 @@
   line-height: 1.8;
 }
 
-/* ---------- Countdown Section ---------- */
-.countdown-section {
-  padding: 4rem 0;
-}
-
-.countdown-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.countdown-box {
-  border-radius: 1rem;
-  padding: 1.5rem 1.2rem;
-  min-width: 100px;
-  text-align: center;
-  transition: var(--transition-smooth);
-}
-
-.countdown-box:hover {
-  transform: translateY(-4px);
-  border-color: rgba(17, 105, 142, 0.5);
-}
-
-.countdown-value {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 700;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1;
-  margin-bottom: 0.4rem;
-}
-
-.countdown-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 /* ---------- Guidebook Section ---------- */
 .guidebook-section {
   padding: 4rem 0;
@@ -243,15 +199,6 @@
     height: 150px;
   }
 
-  .countdown-box {
-    min-width: 75px;
-    padding: 1rem 0.8rem;
-  }
-
-  .countdown-value {
-    font-size: 1.8rem;
-  }
-
   .guidebook-card {
     padding: 2rem 1.5rem;
   }
@@ -263,19 +210,6 @@
 }
 
 @media (max-width: 575.98px) {
-  .countdown-wrapper {
-    gap: 0.5rem;
-  }
-
-  .countdown-box {
-    min-width: 65px;
-    padding: 0.8rem 0.5rem;
-  }
-
-  .countdown-value {
-    font-size: 1.5rem;
-  }
-
   .requirements-list li {
     padding: 1rem;
     font-size: 0.9rem;

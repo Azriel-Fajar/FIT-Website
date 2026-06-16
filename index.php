@@ -179,6 +179,34 @@ include 'includes/navbar.php';
     </div>
 </section>
 
+<!-- Countdown -->
+<section class="countdown-section">
+    <div class="container">
+        <div class="section-title-wrapper fade-in-up">
+            <h2 class="section-title"><span class="gradient-text">Countdown</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="countdown-wrapper fade-in-up" id="countdown-timer">
+            <div class="countdown-box glass">
+                <div class="countdown-value" id="cd-days">00</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-box glass">
+                <div class="countdown-value" id="cd-hours">00</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-box glass">
+                <div class="countdown-value" id="cd-mins">00</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-box glass">
+                <div class="countdown-value" id="cd-secs">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Prize Pool -->
 <?php include 'includes/prizepool.php'; ?>
 

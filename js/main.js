@@ -1,11 +1,4 @@
-// ============================================
-// FIT Competition 2026 - Main JavaScript
-// ============================================
-
 document.addEventListener("DOMContentLoaded", function () {
-  // ===========================
-  // Navbar Scroll Effect
-  // ===========================
   const navbar = document.querySelector(".navbar-fit");
   if (navbar) {
     window.addEventListener("scroll", function () {
@@ -17,13 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ===========================
-  // Countdown Timer
-  // ===========================
   const countdownEl = document.getElementById("countdown-timer");
 
   if (countdownEl) {
-    const targetDate = new Date("2026-05-01T00:00:00").getTime();
+    const targetDate = new Date("2026-07-07T00:00:00").getTime();
 
     function pad(num) {
       return num < 10 ? "0" + num : String(num);
@@ -63,9 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCountdown, 1000);
   }
 
-  // ===========================
-  // Scroll Reveal Animations
-  // ===========================
   const observerOptions = {
     root: null,
     rootMargin: "0px 0px -80px 0px",
@@ -80,20 +67,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, observerOptions);
 
-  // Observe fade-in elements
   document.querySelectorAll(".fade-in-up").forEach(function (el) {
     observer.observe(el);
   });
 
-  // Observe timeline steps
   document.querySelectorAll(".tl-step").forEach(function (el, index) {
     el.style.transitionDelay = index * 0.08 + "s";
     observer.observe(el);
   });
 
-  // ===========================
-  // Prize Pool Counter Animation
-  // ===========================
   const prizeTotal = document.getElementById("prize-total");
   if (prizeTotal) {
     let counted = false;
@@ -118,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function update(currentTime) {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Ease out cubic
       const easeOut = 1 - Math.pow(1 - progress, 3);
       const current = Math.floor(start + (end - start) * easeOut);
       element.textContent = "Rp " + current.toLocaleString("id-ID");
@@ -131,9 +112,6 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(update);
   }
 
-  // ===========================
-  // Close offcanvas on nav click
-  // ===========================
   const offcanvasEl = document.getElementById("offcanvasNav");
   if (offcanvasEl) {
     const offcanvasInstance =

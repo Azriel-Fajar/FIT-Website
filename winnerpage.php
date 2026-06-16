@@ -18,8 +18,8 @@ include 'includes/navbar.php';
                 <div class="title-line"></div>
             </div>
 
-            <div class="tba-text">TBA</div>
-            <p class="text-secondary mt-3">Winners will be announced after the final round.</p>
+            <div class="tba-text">Coming Soon</div>
+            <p class="text-secondary mt-3">Winners will be revealed at the final round on 9 July 2026.</p>
 
             <a href="<?php echo route('/'); ?>" class="btn-outline-glow mt-4">
                 <i class="bi bi-arrow-left me-2"></i>Back to Home
