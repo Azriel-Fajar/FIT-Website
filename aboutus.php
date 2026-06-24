@@ -83,6 +83,16 @@ include 'includes/navbar.php';
                     <img src="<?php echo asset('img/sponsor/rent-gold.png'); ?>" alt="TCP" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
                 </div>
             </div>
+            <div class="col-auto fade-in-up">
+                <div class="sponsor-card-bg" style="border-radius: 1rem;">
+                    <img src="<?php echo asset('img/sponsor/cisco.png'); ?>" alt="Cisco" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
+                </div>
+            </div>
+            <div class="col-auto fade-in-up">
+                <div class="sponsor-card-bg" style="border-radius: 1rem;">
+                    <img src="<?php echo asset('img/sponsor/telkom.png'); ?>" alt="Telkom Indonesia" class="sponsor-logo" style="max-height: 80px;" loading="lazy">
+                </div>
+            </div>
         </div>
     </div>
 </section>

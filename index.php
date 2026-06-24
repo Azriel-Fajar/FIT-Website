@@ -207,6 +207,42 @@ include 'includes/navbar.php';
     </div>
 </section>
 
+<!-- Seminar -->
+<section class="py-5" id="seminar">
+    <div class="container">
+        <div class="section-title-wrapper fade-in-up">
+            <h2 class="section-title"><span class="gradient-text">FIT Seminar 2026</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center fade-in-up">
+                <img src="<?php echo asset('img/seminar-poster.jpeg'); ?>" alt="FIT Seminar 2026" class="img-fluid rounded-4" style="max-width: 450px; width: 100%;" loading="lazy">
+            </div>
+            <div class="col-lg-6 fade-in-up">
+                <div class="about-card glass">
+                    <p>
+                        FIT Seminar 2026 (Expert Sharing Series) is open for public. Day 1 on 7 July 2026 and Day 2 on 9 July 2026, featuring speakers from Chaoyang University of Technology Taiwan, Alfamart, Cisco Systems, and Telkom Indonesia. Register below as an on-site or online participant.
+                    </p>
+                    <div class="guidebook-btn-group mt-3">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZp0FRQEnLdoWeGxLTz_nxx3pEsCiHS7bR8ICVqXYm2elIkQ/viewform" target="_blank" class="btn-glow">
+                            <i class="bi bi-geo-alt me-2"></i>On-Site &mdash; Vol.1
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_Q_6hUZyV1VM20Qe2eUKJlDq-tG8ZVRuTUXC6zPZUgyBUw/viewform" target="_blank" class="btn-glow">
+                            <i class="bi bi-geo-alt me-2"></i>On-Site &mdash; Vol.2
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-yiF3ID1P9CD_61tCYzzmH9Mx5WjWNRRmK3I-DJIgLR08Ow/viewform" target="_blank" class="btn-glow">
+                            <i class="bi bi-camera-video me-2"></i>Online &mdash; Vol.1
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfojtpPTjbl4SfzQ-E96lgLOlpbArhE_5BYZvkTpYNjTtCNfA/viewform" target="_blank" class="btn-glow">
+                            <i class="bi bi-camera-video me-2"></i>Online &mdash; Vol.2
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Prize Pool -->
 <?php include 'includes/prizepool.php'; ?>
 

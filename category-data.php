@@ -38,9 +38,14 @@ include 'includes/timeline.php'; ?>
             <p>
                 The Data Science category focuses on the ability to analyze data and produce meaningful insights. The guidebook includes dataset descriptions, analysis objectives, recommended techniques (such as machine learning or data visualization), and assessment criteria based on model accuracy, result interpretation, and innovation.
             </p>
-            <a href="<?= asset('guidebooks/GuideBook Data Science.pdf') ?>" download class="btn-glow">
-                <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Guidebook
-            </a>
+            <div class="guidebook-btn-group">
+                <a href="<?= asset('guidebooks/GuideBook Finalist Data Science (Indonesia).pdf') ?>" download class="btn-glow">
+                    <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Guidebook (Indonesia)
+                </a>
+                <a href="<?= asset('guidebooks/GuideBook Finalist Data Science (English).pdf') ?>" download class="btn-glow">
+                    <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Guidebook (English)
+                </a>
+            </div>
         </div>
     </div>
 </section>
